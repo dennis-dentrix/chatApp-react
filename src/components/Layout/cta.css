@@ -1,0 +1,34 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --tertiary-color: #e5e5e5;
+  --gold-color: #fca311;
+  --color-blue: #14213d;
+}
+.cta {
+  z-index: 10;
+  padding: 0.6rem 0.9rem;
+  margin: 0.6rem;
+  background-color: var(--gold-color);
+  color: var(--secondary-color);
+  overflow-x: visible;
+  position: absolute;
+  right: 0;
+}
+.hidden {
+  display: none;
+}
+.cta__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta__link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin: 2px;
+}
+.cta__link:hover {
+  border-bottom: 1px solid var(--color-blue);
+}

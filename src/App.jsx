@@ -1,9 +1,13 @@
+import { AllRoutes } from "./routes/AllRoutes";
+
 import "./App.css";
 
 function App() {
   return (
     <>
-      <p className="title">Chat App</p>
+      <main className="main">
+        <AllRoutes />
+      </main>
     </>
   );
 }
