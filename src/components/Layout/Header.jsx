@@ -5,16 +5,16 @@ import {
 } from "@mui/icons-material";
 import { Search } from "../Search";
 import "./header.css";
-import { Cta } from "./Cta";
+import { LoggedOutDropDown } from "./LoggedOutDropDown";
 import { useState } from "react";
 
 export const Header = () => {
   const [isShown, setIsShown] = useState(false);
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    setIsShown(!isShown);
-  };
+  // const handleClick = (event) => {
+  //   event.preventDefault();
+  //   setIsShown(!isShown);
+  // };
 
   return (
     <header className="header">
@@ -32,10 +32,13 @@ export const Header = () => {
         </div>
         <div className="user__access">
           <div className="icon">
-            <AccountCircleOutlined width="2rem" onClick={handleClick} />
+            <AccountCircleOutlined
+              width="2rem"
+              onClick={() => setIsShown(!isShown)}
+            />
           </div>
 
-          {isShown && <Cta />}
+          {isShown && <LoggedOutDropDown setIsShown={setIsShown} />}
         </div>
       </div>
     </header>

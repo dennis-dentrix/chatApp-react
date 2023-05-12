@@ -36,6 +36,12 @@
 .login__welcome {
   font-size: 1.4rem;
 }
+
+.login__btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .login__link {
   text-decoration: none;
   font-size: 1.4rem;
@@ -45,7 +51,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  border-radius: 5px;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -90,4 +98,24 @@
   width: 30vw;
   height: 50%;
   fill: var(--gold-color);
+}
+.action__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form__option {
+  font-size: 1.5rem;
+}
+.form__option--link {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+.form__option--link:hover {
+  border-bottom: 1px solid var(--gold-color);
+}
+@media (max-width: 490px) {
+  .login__img {
+    display: none;
+  }
 }

@@ -5,7 +5,7 @@
   --gold-color: #fca311;
   --color-blue: #14213d;
 }
-.cta {
+.dropdown {
   z-index: 10;
   padding: 0.6rem 0.9rem;
   margin: 0.6rem;
@@ -18,17 +18,17 @@
 .hidden {
   display: none;
 }
-.cta__list {
+.dropdown__list {
   display: flex;
   flex-direction: column;
 }
 
-.cta__link {
+.dropdown__link {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 1.5rem;
   margin: 2px;
 }
-.cta__link:hover {
+.dropdown__link:hover {
   border-bottom: 1px solid var(--color-blue);
 }

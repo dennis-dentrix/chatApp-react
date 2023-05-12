@@ -7,7 +7,9 @@ import {
   AttachFileOutlined,
   CalendarViewDayOutlined,
 } from "@mui/icons-material";
+import { User } from "./User";
 import "./chat.css";
+
 export const Chat = () => {
   return (
     <section className="chat">
@@ -26,11 +28,11 @@ export const Chat = () => {
 
         <div className="chat__space--messages">
           <div className="all__messages">
-            <div className="message__sent chat__message">
+            <p className="message__sent chat__message">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptate, illo dolore
-            </div>
-            <div className="message__received chat__message">Received</div>
+            </p>
+            <p className="message__received chat__message">Received</p>
           </div>
           <form method="post" className="message__form">
             <input type="text" className="message__input" />
@@ -60,7 +62,7 @@ export const Chat = () => {
           </form>
         </div>
       </div>
-      <div className="chat__user--details">About user</div>
+      <User />
     </section>
   );
 };

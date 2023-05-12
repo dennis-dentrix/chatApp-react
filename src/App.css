@@ -31,9 +31,9 @@
 }
 .main__box {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   height: 100%;
+  display: grid;
+  grid-template-columns: 30rem 1fr 30rem;
 }
 
 .header__link {
@@ -79,10 +79,6 @@
 }
 
 @media (max-width: 500px) {
-  .header {
-    background-color: var(--gold-color);
-    color: var(--primary-color);
-  }
   .search__input {
     color: var(--secondary-color);
   }
@@ -94,6 +90,23 @@
     align-items: flex-start;
   }
 }
+@media (max-width: 1067px) {
+  .main__box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .messages {
+    width: 40%;
+  }
+  .chat__user--details {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .chat {
+    width: 60%;
+  }
+}
 @media (max-width: 650px) {
   .chat {
     display: none;
@@ -101,10 +114,5 @@
 
   .messages {
     width: 100%;
-  }
-}
-@media (max-width: 950px) {
-  .chat {
-    width: 60%;
   }
 }

@@ -6,8 +6,11 @@
   --color-blue: #14213d;
 }
 .chat {
-  width: 100%;
+  grid-column: 2 / 3;
   display: flex;
+}
+.chat__space {
+  width: 100%;
 }
 
 .chat__space--header {
@@ -16,11 +19,15 @@
   display: flex;
   justify-content: space-between;
 }
+.all__messages {
+  width: 100%;
+}
 .chat__user {
   display: flex;
   flex-direction: column;
 }
 .chat__user--details {
+  grid-column: 3 / 4;
   background-color: var(--primary-color);
 }
 .chat__option {
@@ -56,6 +63,7 @@
   padding: 1rem;
   margin: 0.7rem 0;
   width: 50%;
+  font-size: 1.4rem;
   border-bottom-left-radius: 1.7rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 1.7rem;
